@@ -17,12 +17,12 @@ Set-Item WSMan:\localhost\MaxTimeoutms 1800000
 ```
 5. Run the following the command to enable the firewall to allow anyone to use the WinRM. `netsh advfirewall firewall add rule name="WinRM-HTTPS" dir=in localport=5986 protocol=TCP action=allow`
 6. Disable IPv6 by running the command.
-For Windows node,
   1. Go to `regedit`
   2. Locate `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters\`
   3. Look for `DisabledComponent`s. If there isn't, create one `DWORD` and named it `DisabledComponents`. The value will be `ffffffff`.
   4. Restart it.
   5. Go to command prompt and type `'ipconfig'`. Make sure there is no IPv6 showing.
+7. Edit the `hosts` file in `C:/Windows/System32/drivers/etc`. Add in `sheep.com    YOUR_CHEF_SERVER_IP_ADDRESS`.
 
 #### Additional Notes:
 1. After you completed this step, you can turn this into a VM template.
