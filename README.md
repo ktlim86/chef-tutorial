@@ -2,9 +2,9 @@
 This repository is created as a tutorial to how to use chef.
 As of now, this portion will be broken down into 4 parts.
 
-1. Section A - This section focuses on how to install a Chef Server on Ubuntu 14.04
-2. Section B - This section focuses on how to prepare of Windows Node
-3. Section C - This section focuses on how to bootstrap your node
-4. Section D - This section focuses on how to provision a Virtual Machine from vSphere vCenter
+1. [Tutorial 01](tutorial01) - This section focuses on how to install a Chef Server on Ubuntu 14.04
+2. [Tutorial 02](tutorial02) - This section focuses on how to prepare of Windows Node
+3. [Tutorial 03](tutorial03) - This section focuses on how to bootstrap your node
+4. [Tutorial 04](tutorial04) - This section focuses on how to provision a Virtual Machine from vSphere vCenter
 
 If you found this helpful, feel free to give comment. :)
