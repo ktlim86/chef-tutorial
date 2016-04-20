@@ -78,7 +78,7 @@ end
 ```
 
 1. Type this command at the chef-repo directory.
-For example, if the directory is at `C:\Users\chef\chef-starter-kits\chef-repo`
+For example, if the directory is at `C:\Users\chef\chef-starter-kits\chef-repo`, then run this command,
 `chef-client -o 'setup_vm::provision' -c .\.chef\knife.rb`.
 
 ### Additional Notes

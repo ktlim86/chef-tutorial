@@ -4,6 +4,7 @@
 ### Part 1: Preparation of window node
 
 On Window Node,
+
 1. Run the following command to create a self-signed certificate. Replace NODE_HOSTNAME with the IP address or FQDN that you can reach from your workstation.
 `$cert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName 'NODE_HOSTNAME'`
 `e.g $cert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName '192.168.198.132'`
@@ -45,6 +46,7 @@ Set-Item WSMan:\\localhost\\MaxTimeoutms 1800000
 ### Part 2. Using prepare node to bootstrap
 
 On your workstation,
+
 1. `knife wsman test HOSTNAME --manual-list --winrm-transport ssl`
 2. On your `PATH_TO_CHEF_KITS/.chef`, open `knife.rb`:
 add in the following line:
