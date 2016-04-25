@@ -6,6 +6,6 @@ As of now, this portion will be broken down into 4 parts.
 2. [Tutorial 02](tutorial02) - This section focuses on how to prepare of Windows Node
 3. [Tutorial 03](tutorial03) - This section focuses on how to bootstrap your node
 4. [Tutorial 04](tutorial04) - This section focuses on how to provision a Virtual Machine from vSphere vCenter
-5. [Tutorial05](tutorial05) - This section is on how to create a data bag
+5. [Tutorial 05](tutorial05) - This section is on how to create a data bag
 
 If you found this helpful, feel free to give comment. :)
