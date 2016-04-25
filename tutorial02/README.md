@@ -23,7 +23,7 @@ Set-Item WSMan:\localhost\MaxTimeoutms 1800000
   4. Restart it.
   5. Go to command prompt and type `'ipconfig'`. Make sure there is no IPv6 showing.
 7. Edit the `hosts` file in `C:/Windows/System32/drivers/etc`. Add in `YOUR_CHEF_SERVER_FQDN    YOUR_CHEF_SERVER_IP_ADDRESS`.
-E.g `sheep.com   192.168.4.55`. 
+E.g `sheep.com   192.168.4.55`.
 
 #### Additional Notes:
 1. After you completed this step, you can turn this into a VM template.
