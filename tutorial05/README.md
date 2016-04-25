@@ -33,13 +33,13 @@ The current directory structure for the data bag will be as followed:
 3. Open the Powershell and type the following the command: `openssl rand -base64 512`
 4. Copy and paste the output into a text editor. Remember to remove all the next line before saving it as `encrypted_data_bag_secret`.
 5. Place the `encrypted_data_bag_secret` in `C:\chef`.
-6. Type the command `knife data bag create password mysql --secret-file C:\chef\encrypted_data_bag_secret`. ![alt text](/tutorial05/img/editor.jpg)
+6. Type the command `knife data bag create password mysql --secret-file C:\chef\encrypted_data_bag_secret`. ![alt text](https://github.com/ktlim86/chef-tutorial/blob/master/tutorial05/img/editor.JPG)
 
-7. A editor will pop out. Fill in the `user` and the `pass`. Make sure the syntax must follow JSON convention. Save and exit. Below is the output. ![alt text](/tutorial05/img/output.jpg)
+7. A editor will pop out. Fill in the `user` and the `pass`. Make sure the syntax must follow JSON convention. Save and exit. Below is the output. ![alt text](https://github.com/ktlim86/chef-tutorial/blob/master/tutorial05/img/output.JPG)
 
-8. Type in the following command. `knife data bag show password my_sql`. You will see the `user` and `pass` are encrypted. ![alt text](/tutorial05/img/show_pass.jpg)
+8. Type in the following command. `knife data bag show password my_sql`. You will see the `user` and `pass` are encrypted. ![alt text](https://github.com/ktlim86/chef-tutorial/blob/master/tutorial05/img/show_pass.JPG)
 
-9. Type in the following command. `knife data bag show password my_sql --secret-file C:\chef\encrypted_data_bag_secret`. You will see the `user` and `pass` are decrypted. ![alt text](/tutorial05/img/show_pass2.jpg)
+9. Type in the following command. `knife data bag show password my_sql --secret-file C:\chef\encrypted_data_bag_secret`. You will see the `user` and `pass` are decrypted. ![alt text](https://github.com/ktlim86/chef-tutorial/blob/master/tutorial05/img/show_pass2.JPG)
 
 ### Reference
 1. https://docs.chef.io/data_bags.html
